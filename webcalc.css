@@ -1,3 +1,10 @@
+.box-luar {
+  border: 1px solid #000;
+  background-color: #1a8cff;
+  width: 100%;
+  padding: 10px 10px;
+}
+
 /*number inputs*/
 input[type="number"] {
   width:50px; height:30px;
