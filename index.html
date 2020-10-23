@@ -9,6 +9,17 @@
 </script>
 </head>
 <body>
-
+  <form id="calc" oninput="updateOutput()">
+    <input name="x" type="number" value="0" />
+    <select name="op" onchange="updateOutput()">
+      <option value="0">+</option>
+      <option value="1">-</option>
+      <option value="2">×</option>
+      <option value="3">÷</option>
+    </select>
+    <input name="y" type="number" value="0" />
+    <div class="equals"> = </div>
+    <output name="z" for="x y">0</output>
+  </form>
 </body>
 </html>
