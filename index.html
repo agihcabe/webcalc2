@@ -5,6 +5,7 @@
   <script src="webcalc.js"></script>
 </head>
 <body>
+  <div class="box-luar">
   <form id="calc" oninput="updateOutput()">
     <input name="x" type="number" value="0" />
     <select name="op" onchange="updateOutput()">
@@ -17,5 +18,6 @@
     <div class="equals"> = </div>
     <output name="z" for="x y">0</output>
   </form>
+  </div>
 </body>
 </html>
