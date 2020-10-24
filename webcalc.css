@@ -13,6 +13,10 @@
   flex-wrap: wrap;
 }
 
+.judul {
+  text-align: center;
+}
+
 /*number inputs*/
 input[type="number"] {
   width:30%; height:50px;
@@ -40,6 +44,10 @@ output {
   text-align:center;
   background:#000000;
   color:#ffffff;
-  float:right;
+  float:left;
   font-size: 30px;
+}
+
+footer {
+  text-align: right;
 }
