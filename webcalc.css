@@ -5,7 +5,7 @@
   background-color: #1a8cff;
   max-width: 800px;
   width: auto;
-  height: auto;
+  height: 60px;
   padding: 10px 10px;
   margin: 0 auto;
   float: center;
@@ -24,6 +24,8 @@ input[type="number"] {
   margin:3px;
   float: left;
   font-size: 30px;
+  border-radius:5px;
+  display: block;
 }
 
 /*select and equals elements*/
