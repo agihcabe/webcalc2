@@ -33,11 +33,11 @@ output {
   display:block;
   border:1px solid #333333;
   border-radius:5px;
-  width:30%; height:100px;
+  width:30%; height:50px;
   margin:3px; padding:2px 0;
   text-align:center;
   background:#000000;
   color:#ffffff;
-  float:left;
+  float:right;
   font-size: 30px;
 }
