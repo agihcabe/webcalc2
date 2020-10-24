@@ -19,7 +19,7 @@
 
 /*number inputs*/
 input[type="number"] {
-  width:30%; height:50px;
+  width:25%; height:50px;
   text-align:center;
   margin:3px;
   float:left;
@@ -39,7 +39,7 @@ output {
   display:block;
   border:1px solid #333333;
   border-radius:5px;
-  width:30%; height:50px;
+  width:25%; height:50px;
   margin:3px; padding:2px 0;
   text-align:center;
   background:#000000;
@@ -49,5 +49,5 @@ output {
 }
 
 footer {
-  text-align: right;
+  text-align: center;
 }
