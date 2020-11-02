@@ -40,6 +40,7 @@ html,body{
 }
 #display{
     border: 2px solid black;
+    border-radius: 10px;
     width:95%;
     padding:5px;
     background-color: #7DCEA0 ;
