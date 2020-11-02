@@ -58,8 +58,9 @@ html,body{
 #buttons button{
     font-size: 3rem;
     margin: 5%;
-  border: 5px outset gray;
-  font-family: Courier;
+    border: 5px outset gray;
+    border-radius: 10px;
+    font-family: Courier;
 }
 #equal{
     grid-area: 3/4/span 2/4;
