@@ -1,55 +1,106 @@
-.box-luar {
-  border: 3px solid #000;
-  border-style: outset;
-  border-radius: 3px;
-  background-color: #1a8cff;
-  max-width: 800px;
-  width: auto;
-  height: 60px;
-  padding: 10px 10px;
-  margin: 0 auto;
-  float: center;
-  display: flex;
-  flex-wrap: wrap;
+html,body{
+    margin:0;
+    padding: 0;
 }
 
-.judul {
+#judul {
   text-align: center;
+  font-family: "Berkshire Swash";
+  font-size: 1.5rem;
+  color: #DC7633;
+  text-shadow: 
+   -1px -1px 1px #212F3D,
+   -1px -1px 3px #212F3D,
+   1px 1px 1px #ABB2B9,
+   1px 1px 3px #ABB2B9,
+   1px -1px 1px #566573,
+   -1px 1px 1px #566573;
+  display: inline-block;
+  padding-bottom: 10px;
 }
-
-/*number inputs*/
-input[type="number"] {
-  width:25%; height:50px;
-  text-align:center;
-  margin:3px;
-  float: left;
-  font-size: 30px;
-  border-radius:5px;
-  display: block;
+#kontainer{
+    box-shadow: 0 0 15px gray;
+    border: 10px outset gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:15px;
+    background-color:rgb(211, 84, 0);
 }
-
-/*select and equals elements*/
-select, .equals {
-  margin:3px;
-  float: left;
-  font-size: 30px;
-  text-align: center;
+@media (max-width:400px){
+    #kontainer{
+        width:100vw;
+    }
 }
-
-/*output element*/
-output {
-  display:block;
-  border:1px solid #333333;
-  border-radius:5px;
-  width:25%; height:50px;
-  margin:3px; padding:2px 0;
-  text-align:center;
-  background:#000000;
-  color:#ffffff;
-  float: left;
-  font-size: 30px;
+#display{
+    border: 2px solid black;
+    width:95%;
+    padding:5px;
+    background-color: #7DCEA0 ;
+    font-size: 4rem;
+    overflow: auto;
+    text-align: right;
+    font-family: VT323;
 }
-
-footer {
-  text-align: center;
+#buttons{
+    display: grid;
+    margin-top: 20px;
+    width:95%;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(5,80px);
+}
+#buttons button{
+    font-size: 3rem;
+    margin: 5%;
+  border: 5px outset gray;
+  font-family: Courier;
+}
+#equal{
+    grid-area: 3/4/span 2/4;
+    background-color: rgba(41, 128, 185);
+}
+button:hover{
+    cursor: pointer;
+    font-weight: bold;
+  background-color: rgb(27, 38, 49);
+  color: white;
+}
+#equal:hover{
+    background-color: rgb(153, 93, 52);
+}
+.operators{
+    background-color: rgb(27, 38, 49);
+  color: white;
+}
+#clear{
+    background-color: rgb(231, 76, 60);
+}
+.operators:hover{
+    background-color: rgb(248, 249, 249);
+  color: black;
+}
+#clear:hover{
+    background-color: rgb(139, 0, 0);
+}
+button:focus{
+    outline: none;
+}
+#backspace{
+    grid-area: 5/3/5/span 2;
+    background-color: rgb(171, 178, 185);
+}
+#backspace:hover{
+    background-color: rgb(46, 64, 83);
+}
+.penulis {
+  font-family: Courier;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: black;
 }
